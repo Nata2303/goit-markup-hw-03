@@ -19,8 +19,14 @@ padding: 0;}
 .link{text-decoration: none;}
 .container{
     width: 1158px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+.flex {
+    display: flex;
+    align-items: center;
 }
 /* heder */
 .web {
@@ -74,6 +80,9 @@ flex-direction: row;
 justify-content: flex-start;
 gap: 40px;
 align-items: center;
+}
+.contakt {
+    margin-left: auto;
 }
 .contakt-list{
     display: flex;
@@ -271,11 +280,23 @@ margin-bottom: 72px;
 font-size: 20px;
 line-height: 1,2;
 letter-spacing: 0.02em;
+margin:0;
+margin-bottom: 8px;
 }
 .text {
 line-height: 1,5;
 letter-spacing: 0.02em;
 color:var(--titel-brand-color);
+margin: 0%;
+}
+.item-box {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+    padding-top: 32px;
+padding-bottom: 32px;
+}
+.item{
+    margin-bottom: 48px;
 }
 .menu-list {
     display: flex;
