@@ -28,7 +28,7 @@ padding: 0;}
     align-items: center;
 }
 .section {
-    padding: 120px;
+    padding: 120px 15px;
 }
 /* heder */
 .web {
@@ -173,7 +173,7 @@ padding-bottom: 188px;
 .about-list {
     display: flex;  
     justify-content: center;
-    gap: 24;
+    gap: 24px;
     margin: 0;
     padding: 0;
 }
@@ -307,6 +307,9 @@ padding-bottom: 32px;
 }
 .item{
     margin-bottom: 48px;
+}
+.item:nth-child(n+7) {
+    margin-bottom: 0px;
 }
 .menu-list {
     display: flex;
