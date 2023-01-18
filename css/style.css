@@ -10,12 +10,13 @@ body{
     font-size: 16px;
     font-style: normal;
     background-color:#FFFFFF;
-    color:var(--menu-brand-color);
+    color:var(--menu-brand-color--);
 }
 .list{
 list-style: none;
 margin: 0;
-padding: 0;}
+padding: 0;
+}
 .link{text-decoration: none;}
 .container{
     width: 1158px;
@@ -26,10 +27,12 @@ padding: 0;}
 .flex {
     display: flex;
     align-items: center;
+}
+header{
     border-bottom: 1px solid #E7E9FC;
 }
 .section {
-    padding: 120px 15px;
+    padding: 120px 0;
 }
 /* heder */
 .web {
@@ -45,21 +48,20 @@ padding: 0;}
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
-    line-height: 1,33;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--menu-brand-color);
+    color: var(--menu-brand-color--);
     margin-right: 74px;
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 72px;
 }
 .heder-container{
     display: flex;
     align-items: center;
     margin: 0;
     border: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    height: 72px;
 }
 .heder-item{
 font-family: inherit;
@@ -76,6 +78,11 @@ border: 0;
 }
 .heder-item:hover, .heder-item:focus {
 color: #404BBF;
+}
+.heder-flex{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 72px;
 }
 .heder-list{
 display: flex;
@@ -99,9 +106,9 @@ border: 0px;
 font-family: inherit;
 font-size: 16px;
 font-style: normal;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color: var(--menu-brand-color);
+color: var(--menu-brand-color--);
 }
 
 .contakt-item:hover, .contakt-item:focus{
@@ -110,9 +117,10 @@ color: var(--menu-brand-color);
 /*section 1*/
 .hero {
     background-color:#2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .hero-container {
-    padding: 188px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -125,6 +133,7 @@ text-align: center;
 margin-left: auto;
 margin-right: auto;
 max-width: 500px;
+margin-bottom: 48px;
 }
 .hero-btn {
 background: #4D5AE5;
@@ -133,7 +142,7 @@ border-radius: 4px;
 font-family: inherit;
 font-size: 16px;
 font-weight: 500;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.04em;
 color: var(--btn-brand-color--);
 padding: 16px 32px;
@@ -180,19 +189,18 @@ margin-right: auto;
     letter-spacing: 0.02em;
 }
 .about-text {
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color:var(--titel-brand-color);
+color:var(--titel-brand-color--);
 }
 /*section 3*/
 .section-services{
     padding-top: 0px;
-    padding-bottom: 84px;
 }
 .services {
     font-weight: 700;
 font-size: 36px;
-line-height: 1,11;
+line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
@@ -207,13 +215,11 @@ margin-top: 0;
 /*section 4*/
 .our_team {
     background: #F4F4FD;
-    padding-top: 156px;
-    padding-bottom: 84px;
 }
 .team{
     font-weight: 700;
 font-size: 36px;
-line-height: 1,11;
+line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
@@ -223,17 +229,17 @@ margin-top: 0;
 .team-titel{
     font-weight: 500;
 font-size: 20px;
-line-height: 1,2;
+line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
 padding-top: 32px;
 margin: 0;
 }
 .team-text{
-line-height: 1,5;
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
-color:var(--titel-brand-color);
+color:var(--titel-brand-color--);
 padding-bottom: 32px;
 margin-top: 8px;
 margin-bottom: 0;
@@ -249,12 +255,11 @@ margin-bottom: 0;
 /*footer*/
 .footer {
     background: #2E2F42;
-    margin-top: 34px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .footer-text{
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 text-align: left;
@@ -262,6 +267,9 @@ width: 264px;
 height: 72px;
 }
 /*second page*/
+.section-menu{
+    padding-top: 96px;
+}
 .btn-item {
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
@@ -293,22 +301,21 @@ margin-bottom: 72px;
 .titel{
     font-weight: 500;
 font-size: 20px;
-line-height: 1,2;
+line-height: 1.2;
 letter-spacing: 0.02em;
 margin:0;
 margin-bottom: 8px;
 }
 .text {
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
-color:var(--titel-brand-color);
+color:var(--titel-brand-color--);
 margin: 0%;
 }
 .item-box {
     border: 1px solid #E7E9FC;
     border-top: none;
-    padding-top: 32px;
-padding-bottom: 32px;
+padding: 32px 16px;
 }
 .item{
     margin-bottom: 48px;
@@ -326,7 +333,7 @@ padding-bottom: 32px;
 font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
-line-height: 1,33;
+line-height: 1.33;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color:#F4F4FD;
